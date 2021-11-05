@@ -59,8 +59,4 @@ object FileUtils {
         }
     }
 
-//    private fun isAndroidRAbove():Boolean{
-//        return
-//    }
-
 }

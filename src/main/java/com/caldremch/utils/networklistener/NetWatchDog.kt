@@ -51,7 +51,7 @@ open class NetWatchDog private constructor() : INetWorkStrategy {
         filter: ListenerType = ListenerType.ALL,
         listener: NetListener?
     ) : this() {
-        this.context = fragment.context!!
+        this.context = fragment.requireContext()
         this.listener = listener
         this.filter = filter
         initStrategy()

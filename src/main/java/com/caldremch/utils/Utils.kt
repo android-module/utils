@@ -1,5 +1,6 @@
 package com.caldremch.utils
 
+import android.annotation.SuppressLint
 import android.content.Context
 
 /**
@@ -13,8 +14,10 @@ import android.content.Context
  * @describe 注册 Application 获得全局 context
  *
  **/
+@SuppressLint("StaticFieldLeak")
 object Utils {
 
+    @SuppressLint("StaticFieldLeak")
     private lateinit var context:Context
 
     fun init(context: Context){
