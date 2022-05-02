@@ -49,14 +49,14 @@ android {
 }
 
 dependencies {
-    implementation(Deps.kotlin_stdlib)
-    implementation(Deps.appcompat)
-    implementation(Deps.ktx)
-    implementation(Deps.coroutines)
-    implementation(Deps.lifecycle)
-    implementation(Deps.gson)
-    implementation(Deps.activity)
-    implementation(Deps.fragment)
+     implementation(libs.kotlin.stdlib.jdk8)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.kotlin.ktx)
+    implementation(libs.kotlin.coroutines.android)
+    implementation(libs.androidx.lifecycle)
+    implementation(libs.gson)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.fragment)
 }
 
 apply(from = "../gradle-maven-kotlin-dsl/mavencentral-with-maven-publish.gradle")
